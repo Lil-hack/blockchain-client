@@ -1,26 +1,15 @@
-import asyncio
-import io
 import logging
-import os
 import re
-import threading
-import time
-from random import randint
 from bit import PrivateKey
 import qrcode as qrcode
 import requests
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import InputMediaDocument, KeyboardButton, ReplyKeyboardMarkup, ContentType
-from urllib.request import urlopen
 import json
 import sqlite3
-#--------------------Настройки бота-------------------------
-
-# Ваш токен от BotFather
-from aiogram.utils.executor import start_webhook
-
 from btc_core import gen_address
 
+# Ваш токен от BotFather
 TOKEN = 'YOUR TOKEN'
 
 # Логирование

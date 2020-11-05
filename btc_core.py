@@ -1,7 +1,7 @@
 from bipwallet.utils import *
 
 def gen_address(index):
-    # Наша seed фраза
+    # Ваша seed фраза
     seed = 'YOUR SEED'
 
     # Мастер ключ из seed фразы
