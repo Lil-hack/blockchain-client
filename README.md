@@ -4,17 +4,24 @@
 
 Склонировав репозиторий, устанавливаем необходимые пакеты:
 
-# pip install -r requirements.txt
+```sh
+pip install -r requirements.txt
+```
 
 Некоторые библиотеки у меня не заработали на windows, так что лучше сразу запускать на linux.
 
 В файле main.py заменяем ваш токен телеграм бота:
 
-# TOKEN = 'YOUR TOKEN'
+```sh
+TOKEN = 'YOUR TOKEN'
+```
 
 В файле btc_core.py заменяем на вашу seed фразу:
 
-# seed = 'YOUR SEED'
+```sh
+seed = 'YOUR SEED'
+```
+
 
 И запускаем бота командой: python main.py
 
