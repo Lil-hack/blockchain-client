@@ -10,7 +10,7 @@ import sqlite3
 from btc_core import gen_address
 
 # Ваш токен от BotFather
-TOKEN = 'YOUR TOKEN'
+TOKEN = '5369040443:AAHBV3on0Vo4fzFNSqeqrRW53QYqhtNj7Cw'
 
 # Логирование
 logging.basicConfig(level=logging.INFO)
@@ -21,9 +21,9 @@ dp = Dispatcher(bot)
 try:
     conn = sqlite3.connect("my.db")  # или :memory: чтобы сохранить в RAM
     cursor = conn.cursor()
-    # cursor.execute(
-    #     "CREATE TABLE users (chatid INTEGER , name TEXT, balance INTEGER, btc_wallet TEXT, wif TEXT, btc_sent TEXT, state INTEGER)")
-    # conn.commit()
+    cursor.execute(
+        "CREATE TABLE users (chatid INTEGER , name TEXT, balance INTEGER, btc_wallet TEXT, wif TEXT, btc_sent TEXT, state INTEGER)")
+    conn.commit()
 except Exception as ex:
     print(ex)
 
