@@ -1,7 +1,2 @@
-aiogram==2.8
-aiohttp==3.6.2
-bipwallet
-bit
-qrcode
-requests
-Pillow
+bip
+bipwallet = 1.0.2
